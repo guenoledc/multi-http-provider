@@ -1,0 +1,16 @@
+{
+  "name": "multi-http-provider",
+  "version": "0.1.2",
+  "description": "Enable the web3 api to connect to several Ethereum nodes to ensure that a node will be reached if others are down.  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ethereum",
+    "web3",
+    "httpprovider"
+  ],
+  "author": "Guénolé de Cadoudal <guenoledc@yahoo.fr>",
+  "license": "ISC"
+}
