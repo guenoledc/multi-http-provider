@@ -61,7 +61,7 @@ var MultiHttpProvider = function(hosts, timeout) {
 	this._callbacks = [];
 	this._traceMessage=false;
 	this.providers=hosts.map(function(host) {
-							 return new Web3.providers.HttpProvider(host, timeout);});
+							 return new Web3.providers.HttpProvider(host.address, timeout, host.user, host.password);});
 	this.subscriptions = {}; // will contains subscriptions detected via the subscription rpc methods, each obj being
 							// xxxx: {newId:yyyy, method:'one of new method', params:[....]}
 	this.switchToNextConnected();
